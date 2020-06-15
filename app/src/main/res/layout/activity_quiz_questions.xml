@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:fillViewport="true"
+    android:gravity="center"
+    android:background="@drawable/backimg1"
+    android:orientation="vertical"
+    tools:context=".QuizQuestionsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_guestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="What cauntry does this flag belong to?"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:src="@drawable/austalia_flag" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress_details"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:padding="16sp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                tools:ignore="Suspicious0dp" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15sp"
+                android:text="0/10"
+                android:textColor="@android:color/white"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15sp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15sp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15sp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15sp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="Apple"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:onClick="btn_submit"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="SUBMIT" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
