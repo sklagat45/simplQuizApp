@@ -1,5 +1,11 @@
 package com.sklagat46.quizapp
 object Constants {
+
+    const val USER_NAME: String="user_name"
+    const val TOTAL_QUESTIONS:String="total_questions"
+    const val CORRECT_ANSWERS:String="correct_answers"
+
+
     fun getQuestions(): ArrayList<Questions>{
         val questionsList = ArrayList<Questions>()
         val que1 = Questions(1,
@@ -29,7 +35,7 @@ object Constants {
             "yemen",
             "australia",
             "switzerland",
-            4
+            2
         )
         questionsList.add(que3)
         val que4 = Questions(1,
